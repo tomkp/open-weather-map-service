@@ -1,0 +1,43 @@
+{
+    "name": "open-weather-map-service",
+    "version": "0.0.2",
+    "description": "Simple browser-friendly micro service for the Open Weather Map api",
+    "keywords": [
+        "browser",
+        "client",
+        "openweathermap",
+        "weather",
+        "micro-service"
+    ],
+    "main": "index.js",
+    "dependencies": {
+        "jquery": "~1.8.3",
+        "chai": "~1.8.1"
+    },
+    "devDependencies": {
+        "mocha": "~1.14.0"
+    },
+    "scripts": {
+        "test": "mocha"
+    },
+    "testling": {
+        "browsers": [
+            "ie8", "ie9",
+            "firefox/15",
+            "chrome/22",
+            "opera/12",
+            "safari/5.1"
+        ],
+        "harness": "mocha",
+        "files": "test/*.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/tomkp/open-weather-map-service"
+    },
+    "author": "tomkp",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/tomkp/open-weather-map-service/issues"
+    }
+}
